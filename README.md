@@ -7,6 +7,8 @@ Dự án thực tập xây dựng hạ tầng WordPress 3-tier trên AWS sử d�
  🏗️ Kiến Trúc Hệ Thống
  
 ![Architecture Diagram](./img/architecture.png)
+
+
 Internet → ALB (Public) → WordPress ASG (Private) → RDS MySQL (Database) ↓ S3 Storage + CloudWatch Monitoring
 
  🚀 Tính Năng Chính
