@@ -5,6 +5,8 @@
 Dự án thực tập xây dựng hạ tầng WordPress 3-tier trên AWS sử dụng Terraform với đầy đủ tính năng production-ready.
 
  🏗️ Kiến Trúc Hệ Thống
+ 
+![Architecture Diagram](./img/architecture.png)
 Internet → ALB (Public) → WordPress ASG (Private) → RDS MySQL (Database) ↓ S3 Storage + CloudWatch Monitoring
 
  🚀 Tính Năng Chính
@@ -34,16 +36,18 @@ Internet → ALB (Public) → WordPress ASG (Private) → RDS MySQL (Database) �
 ```bash
 # Copy và cấu hình variables
 cp terraform.tfvars.example terraform.tfvars
-
+```
 # Bước 2: Cấu Hình terraform.tfvars
-
+```bash
 # Cập nhật các giá trị sau:
 project_name = "wordpress-3tier"
 key_name     = "your-aws-key-pair"
 db_password  = "your-strong-password"
 alert_email  = "your-email@example.com"
-
+```
 # Bước 3: Deploy Infrastructure
+```bash
 # Chạy script deployment
 chmod +x scripts/deploy.sh
 ./scripts/deploy.sh
+```
