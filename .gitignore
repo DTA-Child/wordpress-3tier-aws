@@ -1,0 +1,17 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+*.tfplan
+.terraform.lock.hcl
+
+# Keys
+*.pem
+
+# Logs and crash files
+*.log
+*.crash
+
+# VSCode
+.vscode/
